@@ -1,0 +1,89 @@
+/********************
+Google fonts
+********************/
+@import url(http://fonts.googleapis.com/css?family=Ovo|Oswald|Open+Sans);
+
+html { font-size: 100%/1 }
+body { font-family: $font-family; }
+
+h1, h2, h3, h4, h5, h6 { font-family: $title-font-family; }
+h1 { font-size: 2.5em; margin-bottom: 1em; } /* 2.625*16 = 42 */
+h2 { font-size: 2.25em; } /* 2.25*16 = 36 */ 
+h3 { font-size: 1.875em; } /* 1.875*16 = 30 */
+h4 { font-size: 1.6em; margin-bottom: 0.3em; } /* 1.6*16 = 24 */ 
+h5 { font-size: 1.25em; } /* 1.25*16 = 18 */
+h6 { font-size: 0.875em; } /* 0.875*16 = 14 */
+p { 
+	font-size: 1.2em;
+	line-height: 1.5em;
+	letter-spacing: 0.0625em;
+    margin: 0 0 1em;   
+}
+p a { text-decoration: none; }
+.overcast p a { color: $blue_g; }
+.sunset p a { color: $red_g; }
+p a:hover { color: $red; }
+
+
+h1.heading { 
+	text-align: center;
+	margin-bottom: 1em;
+	padding-top: 2.2em;
+}
+h1.heading span:first-child {
+	display: block;
+	margin-bottom: 0.2em;
+	text-transform: uppercase;
+}
+h4.heading {
+	text-align: center;
+	margin-bottom: 2em;
+	padding-top: 1.8em;
+}
+h4.heading span:first-child {
+	display: block;
+	margin-bottom: 0.2em;
+	text-transform: uppercase;	
+}
+.overcast .on-light span:first-child { color: $blue_b; }
+.overcast .on-dark span:first-child { color: $daylight; }
+.sunset .on-light span:first-child { color: $red_b; }
+.sunset .on-dark span:first-child { color: $daylight; }
+
+h1.heading .subtitle {
+	display: block;
+	font-size: 0.5em;
+	line-height: 1.2;
+	font-family: $sub-font-family;
+	color: $blue_f;
+}
+.overcast h1.heading .subtitle { color: $blue_g; }
+.sunset h1.heading .subtitle { color: $red_g; }
+
+h4.heading .subtitle {
+	display: block;
+	font-size: 0.8em;
+	line-height: 1.2;
+	font-family: $sub-font-family;
+}
+h4.heading .mail {
+	padding-bottom: 0.4em;
+	display: block;
+}
+h4.heading a {
+	text-decoration: none;
+	color: $daylight;
+	font-size: 0.8em;
+}
+
+h4.heading a:hover {
+	color: $red;
+}
+.overcast h4.heading .subtitle { color: $blue_g; }
+.sunset h4.heading .subtitle { color: $red_g; }
+
+.info h4 {
+	color: $daylight; 
+	text-transform: uppercase; 
+	text-align: center;
+}

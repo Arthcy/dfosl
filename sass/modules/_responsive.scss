@@ -1,0 +1,16 @@
+@media only screen and (max-width: 480px) {
+	
+	#frame .frame-tree { width: 15%; }
+	.divider { width: 650px; }
+	// #outlook-anchor img { width: 650px; } 
+	// #clearing img { width: 650px; }
+	// #brook img { width: 650px; }
+	#menu-button { display: block; }
+	section .navbar { display: none; }	
+	.resume, .projects { margin-top: 30px; }
+}
+@media only screen and (max-width: 767px) {
+	.tags { text-align: center; }
+	#projects .socials { padding-top: 30px;  }
+	h1.heading { padding-top: 1em; }
+}

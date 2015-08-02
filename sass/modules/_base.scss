@@ -1,0 +1,22 @@
+/*
+* Import
+*/
+@import "typography";
+@import "mixins";
+
+/*
+* Global
+*/
+// .button > * {
+// 	padding: 0.4em 0.8em;
+// 	display: inline;
+// 	background-color: inherit;
+// 	color: inherit;
+// 	@include border-radius(1em);
+// }
+// .button > *:hover, .active { background-color: $red; }
+
+img { width: 100%; }
+
+.left { float: left; }
+.right { float: right; }
