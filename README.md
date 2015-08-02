@@ -7,7 +7,7 @@ Background
 ----------------------------------
 SVG illustrations with parallax effect using Skrollr.js.
 The SVG is used instead of PNG images to reduce filesize and smooth up 
-the browser rendering during scroll. Parallax effect works on mobile (with some link issues).
+the browser rendering during scroll. Parallax effect works on mobile (with some link issues). You can find the site [here](project http://www.arthcy.net)
 
 Features
 ----------------------------------

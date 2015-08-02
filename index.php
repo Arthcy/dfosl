@@ -52,15 +52,14 @@ include_once('header.php');
     					<hr>
     				</h1>
 	    			<div class="eleven columns offset-by-one">	
-	    				<p>My name is Robin Hansson, I'm a web developer. When I'm not in to developing
-	    				I enjoy myself with graphics, static as motion.</p>
-	    				
-	    				<p>After two years education in Computer Networks my creative needs made me change 
-	    				direction. From bits to pixels, I finished a customised two year program in web development 
-	    				and design. With parts from two worlds, I have a deep knowledge of how the web works.</p>
-	    				
-	    				<p>Im currently looking for projects to be involved in.<br>
-	    				If you are intrested, <a href="#contact">let me know.</a></p>
+						<p>My name is Robin Hansson, I'm a web developer. When I'm not developing I enjoy creating graphics, static as well as motion.</p>
+
+						<p>After two years education in Computer Networks my creative needs made me change direction. From bits to pixels. 
+						I finished a customised two year program in web development and design. With this in mind, I have great knowledge of how the web works.</p>
+
+						<p>Im currently looking for projects to be involved in and know I will be a great asset to your team.</p>
+
+						<p>If you feel the same just <a href="#contact">contact</a> me.</p>
 	    			</div>
 	    			<div class="socials on-light four columns">
   						<a href="https://github.com/Arthcy">
