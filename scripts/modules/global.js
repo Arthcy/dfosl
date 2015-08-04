@@ -120,9 +120,9 @@ define(['skrollr'], function (skrollr) {
 					$('#main').css({opacity: 0, visibility: "visible"}).animate({opacity: 1}, 200);
 					$('.preloader').css('display', 'none');
 
-					// if (scrolled === false) {
-					// 	$s.animateTo(window.innerHeight);  
-					// }
+					if (scrolled === false) {
+						$s.animateTo(window.innerHeight);  
+					}
 				}, 1000);
 			});
 		}
