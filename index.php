@@ -16,201 +16,198 @@ include_once('header.php');
 		<?php if(isset($navbar)): ?><?= get_navbar($navbar, true) ?><?php endif; ?>
 
 	</div>
-	<div id="skrollr-body" class="main">
+	<div id="skrollr-body">
 		<div id="splash">
 			<div id="logo" data-start="top: 30%;" data-100-top-bottom="top: 100%;" data-anchor-target="#splash">
 				<!-- <h1 class="logo-font">Arthcy</h1> -->
 				<span class="preloader"></span>
 			</div>
 		</div>
-		<header>
-			<div id="outlook" class="dividers">
-				<div id="outlook-anchor" class="divider">
-					<div id="pl-cloud-dark" class="plzi-bg-second pl svg-container" data-bottom-top="bottom: 90%;" data-top-bottom="bottom: 10%;" data-anchor-target="#outlook-anchor"></div>
-					<div id="pl-cloud-light" class="plzi-bg-third pl svg-container" data-bottom-top="bottom: 60%;" data-top-bottom="bottom: -20%;" data-anchor-target="#outlook-anchor"></div>
+		<div id="main">
+			<header>
+				<div id="outlook" class="divider">
+					<div id="outlook-anchor" class="pl-anchor">
+						<div id="pl-cloud-dark" class="plzi-bg-second pl" data-bottom-top="bottom: 90%;" data-top-bottom="bottom: 10%;" data-anchor-target="#outlook-anchor"></div>
+						<div id="pl-cloud-light" class="plzi-bg-third pl" data-bottom-top="bottom: 60%;" data-top-bottom="bottom: -20%;" data-anchor-target="#outlook-anchor"></div>
 
-				    <?= parallax_builder('outlook', 7, 10, 1, 0, 1); ?>
+					    <?= parallax_builder('outlook', 7, 10, 1, 0, 1); ?>
 
-				</div>
-			    <div id="frame">
-			    	<div id="pl-right-tree" class="frame-tree plzi-content pl svg-container"></div>
-			    	<div id="pl-left-tree" class="frame-tree plzi-content pl svg-container"></div>
-			    	<div id="pl-ground" class="plzi-content pl svg-container"></div>
-			    </div>
-			</div>
-		</header>
-
-	    <section id="about">
-	    	<div class="container">
-				
-				<?php if(isset($navbar)): ?><?=get_navbar($navbar)?><?php endif; ?>
-
-	    		<div class="resume clearfix">
-    				<h1 class="heading on-light">
-    					<span>About Me</span>
-    					<span class="subtitle">Soul of code and a heart for graphics</span>
-    					<hr>
-    				</h1>
-	    			<div class="eleven columns offset-by-one">	
-						<p>My name is Robin Hansson, I'm a web developer. When I'm not developing I enjoy creating graphics, static as well as motion.</p>
-
-						<p>After two years education in Computer Networks my creative needs made me change direction. From bits to pixels. 
-						I finished a customised two year program in web development and design. With this in mind, I have great knowledge of how the web works.</p>
-
-						<p>Im currently looking for projects to be involved in and know I will be a great asset to your team.</p>
-
-						<p>If you feel the same just <a href="#contact">contact</a> me.</p>
-	    			</div>
-	    			<div class="socials on-light four columns">
-  						<a href="https://github.com/Arthcy">
-  							<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="48px" width="48px" x="0" y="0" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
-								<path fill="#7aa4a2" d="M48 25.3c-0.3 5.4-2 10.6-5.4 14.8 -1.6 1.9-3.4 3.7-5.4 5 -1.4 0.9-4.8 3.4-6.5 2.7 -0.4-0.2-0.7-0.6-0.7-1.1 0-4.1 0.9-7.9-1.6-11.4 3.1-0.4 6.4-1.3 8.5-3.9 2.5-3.1 3.2-8.4 1.7-12.1 -0.6-1.5-1.8-2.3-1.6-4 0.3-1.9 0.4-3.3-0.3-5.3 0-0.1-0.1-0.1-0.2-0.1 -2.6-0.4-3.9 1.7-6.1 2.3 -0.9 0.3-2-0.2-3-0.3 -1.3-0.2-2.7-0.3-4-0.2 -1.9 0.1-4.7 1.3-6.3 0.3 -0.6-0.3-5.2-3.2-5.7-1.9 -0.5 1.3-0.7 2.7-0.7 4.1 0 0.8 0.2 1.5 0.4 2.3 0.1 0.4-0.8 1.3-1 1.6 -0.5 0.8-0.9 1.7-1.1 2.6 -0.6 2.3-0.5 4.8 0.2 7 1.4 5 5.6 7.1 10.4 7.7 -0.2 0.4-1.3 3.2-1.6 3.3 -0.9 0.4-1.8 0.6-2.8 0.6 -1.4 0-2.5-0.6-3.4-1.6 -1.3-1.5-2.3-3.7-4.6-3.6 -0.2 0-0.4 0.1-0.6 0.1 -0.3 0.1-0.3 0.3-0.2 0.6 0.5 0.8 1.5 1.2 2.1 1.9 0.7 0.8 1 1.7 1.5 2.6 1 1.8 2.4 2.8 4.5 3 1.2 0.1 2.4 0 3.5-0.3 0.1 1.2 0.6 4.6-0.3 5.5 -0.3 0.2-0.6 0.3-0.9 0.3 -1.9 0-4-1.5-5.5-2.5 -1.9-1.2-3.7-2.8-5.2-4.5 -2.8-3.3-4.8-7.3-5.6-11.6 -1.7-8.9 1.6-18.2 8.4-23.9C21.4-5.2 41 0.6 46.5 16.1 47.6 19 48 22.2 48 25.3 48 25 48 25 48 25.3 47.7 30.1 48 24.8 48 25.3z"/>
-							</svg>
-							<h4>Github</h4>
-						</a>
-  						<a href="https://www.behance.net/arthcy">
-							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0" y="0" height="48px" width="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
-								<path fill="#7aa4a2" d="M0 24C0 10.7 10.8 0 24 0c13.2 0 24 10.8 24 24 0 13.3-10.8 24-24 24C10.7 48 0 37.2 0 24zM21.4 22.7c0.3-0.1 0.4-0.2 0.6-0.3 0.8-0.3 1.4-0.9 1.7-1.6 1.1-2.3 0-5.5-2.3-6.6 -1-0.5-2-0.6-3.1-0.6 -3.2 0-6.5 0-9.7 0 -0.2 0-0.3 0-0.5 0 0 6.7 0 13.3 0 20 0.2 0 0.3 0 0.4 0 3.3 0 6.7 0 10 0 0.5 0 1 0 1.4-0.1 2.3-0.5 4.1-1.7 4.6-4.1 0.3-1.4 0.3-2.7-0.2-4C24.1 23.8 23.1 22.9 21.4 22.7zM40.2 28.7c-1.2 0-2.3 0-3.5 0 -0.1 1.1-0.9 1.8-1.9 2 -0.6 0.1-1.1 0.2-1.7 0.1 -2-0.1-3.3-1.6-3.1-3.5 0.2 0 0.4 0 0.6 0 3.1 0 6.1 0 9.2 0 0.4 0 0.6 0 0.6-0.5 0-0.9 0.1-1.8-0.1-2.7 -0.5-2.6-2-4.5-4.7-5.2 -0.9-0.2-1.9-0.3-2.8-0.2 -2.6 0.1-4.6 1.1-5.9 3.4 -1.2 2.2-1.5 4.6-0.8 7.1 0.6 2.1 2 3.6 4.1 4.3 1.5 0.5 3.1 0.6 4.7 0.4 1.1-0.1 2.2-0.4 3.1-1C39.5 32 40.2 30.5 40.2 28.7zM37.3 14.8c-2.7 0-5.5 0-8.2 0 0 0.8 0 1.6 0 2.4 2.7 0 5.4 0 8.2 0C37.3 16.4 37.3 15.6 37.3 14.8zM12.7 24.7c2 0 4 0 6 0 0.8 0 1.4 0.6 1.7 1.4 0.3 0.8 0.3 1.6 0.1 2.4 -0.2 0.8-0.8 1.4-1.7 1.5 -2 0.1-4 0-6.1 0C12.7 28.2 12.7 26.5 12.7 24.7zM12.7 21.6c0-1.5 0-2.9 0-4.4 0.5 0 0.9 0 1.4 0 1.4 0 2.7 0 4.1 0 0.9 0 1.5 0.4 1.6 1.4 0.1 0.7 0 1.4-0.1 2 -0.1 0.6-0.5 1-1.2 1C16.6 21.6 14.7 21.6 12.7 21.6zM36.5 24.7c-2.2 0-4.3 0-6.5 0 0-1.6 1.6-3.1 3.4-3.1C35.2 21.6 36.4 22.7 36.5 24.7z"/>
-							</svg>
-							<h4>Behance</h4>
-  						</a>
-	    			</div>
-				</div>
-			</div> 
-		</section>
-
-    	<div id="clearing" class="dividers">
-	    	<div id="clearing-anchor" class="divider">
-	    		<div id="pl-1" class="plzi-top pl">
-	    			<!-- <img src="img/clearing/clearing_forest-l-01.png"> -->
-	    		</div>
-
-				<?= parallax_builder('clearing', 6, 15, 1, 5, 1); ?>
-			
-			</div>
-		</div>
-	    
-	    <section id="projects">
-	    	<div class="container">
-
-				<?php if(isset($navbar)): ?><?=get_navbar($navbar)?><?php endif; ?>
-
-				<h1 class="heading on-dark">
-					<span>Projects</span>
-					<span class="subtitle">My Work So far</span>
-					<hr>
-				</h1>
-
-	    		<div class="projects row">
-					<div class="">
-						<figure class="project-item clearfix">
-							<svg class="browser-top" height="40" width="70">
-								<circle cx="20" cy="18" r="7" fill="#7aa4a2" />
-								<circle cx="40" cy="18" r="7" fill="#7aa4a2" />
-								<circle cx="60" cy="18" r="7" fill="#7aa4a2" />
-							</svg>
-		    				<div class="content">
-		    					<img src="img/proj_lujuriavegana.png">
-		    				</div>
-		    				<figcaption class="row">
-				    			<h4 class="heading on-light">
-					    			<span>Lujuria Vegana</span>
-				    				<span class="subtitle">Site Fresh Up</span>
-					   				<hr>
-				   				</h4>
-			    				<div class="description offset-by-one ten columns">
-			  						<p>Lujuria Vegana wanted to update their current site with the possibility to
-			  						upload new products and services. The site is build on Wordpress with custom plugins.</p>
-								</div>
-								<ul class="tags four columns">
-									<li><span>Wordpress</span></li>
-									<li><span>PHP</span></li>
-									<li><span>Front-End Development</span></li>
-									<li><span>Multilingual Support</span></li>
-								</ul>
-<!-- 								<div class="socials on-light sixteen columns">
-			  						<a href="#">
-			  							<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="48px" width="48px" x="0" y="0" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
-											<path fill="#7aa4a2" d="M48 25.3c-0.3 5.4-2 10.6-5.4 14.8 -1.6 1.9-3.4 3.7-5.4 5 -1.4 0.9-4.8 3.4-6.5 2.7 -0.4-0.2-0.7-0.6-0.7-1.1 0-4.1 0.9-7.9-1.6-11.4 3.1-0.4 6.4-1.3 8.5-3.9 2.5-3.1 3.2-8.4 1.7-12.1 -0.6-1.5-1.8-2.3-1.6-4 0.3-1.9 0.4-3.3-0.3-5.3 0-0.1-0.1-0.1-0.2-0.1 -2.6-0.4-3.9 1.7-6.1 2.3 -0.9 0.3-2-0.2-3-0.3 -1.3-0.2-2.7-0.3-4-0.2 -1.9 0.1-4.7 1.3-6.3 0.3 -0.6-0.3-5.2-3.2-5.7-1.9 -0.5 1.3-0.7 2.7-0.7 4.1 0 0.8 0.2 1.5 0.4 2.3 0.1 0.4-0.8 1.3-1 1.6 -0.5 0.8-0.9 1.7-1.1 2.6 -0.6 2.3-0.5 4.8 0.2 7 1.4 5 5.6 7.1 10.4 7.7 -0.2 0.4-1.3 3.2-1.6 3.3 -0.9 0.4-1.8 0.6-2.8 0.6 -1.4 0-2.5-0.6-3.4-1.6 -1.3-1.5-2.3-3.7-4.6-3.6 -0.2 0-0.4 0.1-0.6 0.1 -0.3 0.1-0.3 0.3-0.2 0.6 0.5 0.8 1.5 1.2 2.1 1.9 0.7 0.8 1 1.7 1.5 2.6 1 1.8 2.4 2.8 4.5 3 1.2 0.1 2.4 0 3.5-0.3 0.1 1.2 0.6 4.6-0.3 5.5 -0.3 0.2-0.6 0.3-0.9 0.3 -1.9 0-4-1.5-5.5-2.5 -1.9-1.2-3.7-2.8-5.2-4.5 -2.8-3.3-4.8-7.3-5.6-11.6 -1.7-8.9 1.6-18.2 8.4-23.9C21.4-5.2 41 0.6 46.5 16.1 47.6 19 48 22.2 48 25.3 48 25 48 25 48 25.3 47.7 30.1 48 24.8 48 25.3z"/>
-										</svg>
-										<h4>Github</h4>
-									</a>
-			  						<a href="#">
-										<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0" y="0" height="48px" width="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
-											<path fill="#7aa4a2" d="M0 24C0 10.7 10.8 0 24 0c13.2 0 24 10.8 24 24 0 13.3-10.8 24-24 24C10.7 48 0 37.2 0 24zM21.4 22.7c0.3-0.1 0.4-0.2 0.6-0.3 0.8-0.3 1.4-0.9 1.7-1.6 1.1-2.3 0-5.5-2.3-6.6 -1-0.5-2-0.6-3.1-0.6 -3.2 0-6.5 0-9.7 0 -0.2 0-0.3 0-0.5 0 0 6.7 0 13.3 0 20 0.2 0 0.3 0 0.4 0 3.3 0 6.7 0 10 0 0.5 0 1 0 1.4-0.1 2.3-0.5 4.1-1.7 4.6-4.1 0.3-1.4 0.3-2.7-0.2-4C24.1 23.8 23.1 22.9 21.4 22.7zM40.2 28.7c-1.2 0-2.3 0-3.5 0 -0.1 1.1-0.9 1.8-1.9 2 -0.6 0.1-1.1 0.2-1.7 0.1 -2-0.1-3.3-1.6-3.1-3.5 0.2 0 0.4 0 0.6 0 3.1 0 6.1 0 9.2 0 0.4 0 0.6 0 0.6-0.5 0-0.9 0.1-1.8-0.1-2.7 -0.5-2.6-2-4.5-4.7-5.2 -0.9-0.2-1.9-0.3-2.8-0.2 -2.6 0.1-4.6 1.1-5.9 3.4 -1.2 2.2-1.5 4.6-0.8 7.1 0.6 2.1 2 3.6 4.1 4.3 1.5 0.5 3.1 0.6 4.7 0.4 1.1-0.1 2.2-0.4 3.1-1C39.5 32 40.2 30.5 40.2 28.7zM37.3 14.8c-2.7 0-5.5 0-8.2 0 0 0.8 0 1.6 0 2.4 2.7 0 5.4 0 8.2 0C37.3 16.4 37.3 15.6 37.3 14.8zM12.7 24.7c2 0 4 0 6 0 0.8 0 1.4 0.6 1.7 1.4 0.3 0.8 0.3 1.6 0.1 2.4 -0.2 0.8-0.8 1.4-1.7 1.5 -2 0.1-4 0-6.1 0C12.7 28.2 12.7 26.5 12.7 24.7zM12.7 21.6c0-1.5 0-2.9 0-4.4 0.5 0 0.9 0 1.4 0 1.4 0 2.7 0 4.1 0 0.9 0 1.5 0.4 1.6 1.4 0.1 0.7 0 1.4-0.1 2 -0.1 0.6-0.5 1-1.2 1C16.6 21.6 14.7 21.6 12.7 21.6zM36.5 24.7c-2.2 0-4.3 0-6.5 0 0-1.6 1.6-3.1 3.4-3.1C35.2 21.6 36.4 22.7 36.5 24.7z"/>
-										</svg>
-										<h4>Behance</h4>
-			  						</a>
-								</div> -->
-							</figcaption>
-						</figure>
 					</div>
+				    <div id="frame">
+				    	<div id="pl-right-tree" class="frame-tree plzi-content pl side-tree"></div>
+				    	<div id="pl-left-tree" class="frame-tree plzi-content pl side-tree"></div>
+				    	<div id="pl-ground" class="plzi-content pl svg-container"></div>
+				    </div>
+				</div>
+			</header>
+
+		    <section id="about" class="clearfix">
+		    	<div class="container">
+					
+					<?php if(isset($navbar)): ?><?=get_navbar($navbar)?><?php endif; ?>
+
+		    		<div class="resume clearfix">
+	    				<h1 class="heading on-light">
+	    					<span>About Me</span>
+	    					<span class="subtitle">Soul of code and a heart for graphics</span>
+	    					<hr>
+	    				</h1>
+		    			<div class="eleven columns offset-by-one">	
+							<p>My name is Robin Hansson, I'm a web developer. When I'm not developing I enjoy creating graphics, static as well as motion.</p>
+
+							<p>After two years education in Computer Networks my creative needs made me change direction. From bits to pixels. 
+							I finished a customised two year program in web development and design. With this in mind, I have great knowledge of how the web works.</p>
+
+							<p>Im currently looking for projects to be involved in and know I will be a great asset to your team.</p>
+
+							<p>If you feel the same just <a href="#contact">contact</a> me.</p>
+		    			</div>
+		    			<div class="socials on-light four columns">
+	  						<a href="https://github.com/arthcy">
+	  							<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="48px" width="48px" x="0" y="0" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+									<path fill="#7aa4a2" d="M48 25.3c-0.3 5.4-2 10.6-5.4 14.8 -1.6 1.9-3.4 3.7-5.4 5 -1.4 0.9-4.8 3.4-6.5 2.7 -0.4-0.2-0.7-0.6-0.7-1.1 0-4.1 0.9-7.9-1.6-11.4 3.1-0.4 6.4-1.3 8.5-3.9 2.5-3.1 3.2-8.4 1.7-12.1 -0.6-1.5-1.8-2.3-1.6-4 0.3-1.9 0.4-3.3-0.3-5.3 0-0.1-0.1-0.1-0.2-0.1 -2.6-0.4-3.9 1.7-6.1 2.3 -0.9 0.3-2-0.2-3-0.3 -1.3-0.2-2.7-0.3-4-0.2 -1.9 0.1-4.7 1.3-6.3 0.3 -0.6-0.3-5.2-3.2-5.7-1.9 -0.5 1.3-0.7 2.7-0.7 4.1 0 0.8 0.2 1.5 0.4 2.3 0.1 0.4-0.8 1.3-1 1.6 -0.5 0.8-0.9 1.7-1.1 2.6 -0.6 2.3-0.5 4.8 0.2 7 1.4 5 5.6 7.1 10.4 7.7 -0.2 0.4-1.3 3.2-1.6 3.3 -0.9 0.4-1.8 0.6-2.8 0.6 -1.4 0-2.5-0.6-3.4-1.6 -1.3-1.5-2.3-3.7-4.6-3.6 -0.2 0-0.4 0.1-0.6 0.1 -0.3 0.1-0.3 0.3-0.2 0.6 0.5 0.8 1.5 1.2 2.1 1.9 0.7 0.8 1 1.7 1.5 2.6 1 1.8 2.4 2.8 4.5 3 1.2 0.1 2.4 0 3.5-0.3 0.1 1.2 0.6 4.6-0.3 5.5 -0.3 0.2-0.6 0.3-0.9 0.3 -1.9 0-4-1.5-5.5-2.5 -1.9-1.2-3.7-2.8-5.2-4.5 -2.8-3.3-4.8-7.3-5.6-11.6 -1.7-8.9 1.6-18.2 8.4-23.9C21.4-5.2 41 0.6 46.5 16.1 47.6 19 48 22.2 48 25.3 48 25 48 25 48 25.3 47.7 30.1 48 24.8 48 25.3z"/>
+								</svg>
+								<h4>Github</h4>
+							</a>
+	  						<a href="https://www.behance.net/arthcy">
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0" y="0" height="48px" width="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+									<path fill="#7aa4a2" d="M0 24C0 10.7 10.8 0 24 0c13.2 0 24 10.8 24 24 0 13.3-10.8 24-24 24C10.7 48 0 37.2 0 24zM21.4 22.7c0.3-0.1 0.4-0.2 0.6-0.3 0.8-0.3 1.4-0.9 1.7-1.6 1.1-2.3 0-5.5-2.3-6.6 -1-0.5-2-0.6-3.1-0.6 -3.2 0-6.5 0-9.7 0 -0.2 0-0.3 0-0.5 0 0 6.7 0 13.3 0 20 0.2 0 0.3 0 0.4 0 3.3 0 6.7 0 10 0 0.5 0 1 0 1.4-0.1 2.3-0.5 4.1-1.7 4.6-4.1 0.3-1.4 0.3-2.7-0.2-4C24.1 23.8 23.1 22.9 21.4 22.7zM40.2 28.7c-1.2 0-2.3 0-3.5 0 -0.1 1.1-0.9 1.8-1.9 2 -0.6 0.1-1.1 0.2-1.7 0.1 -2-0.1-3.3-1.6-3.1-3.5 0.2 0 0.4 0 0.6 0 3.1 0 6.1 0 9.2 0 0.4 0 0.6 0 0.6-0.5 0-0.9 0.1-1.8-0.1-2.7 -0.5-2.6-2-4.5-4.7-5.2 -0.9-0.2-1.9-0.3-2.8-0.2 -2.6 0.1-4.6 1.1-5.9 3.4 -1.2 2.2-1.5 4.6-0.8 7.1 0.6 2.1 2 3.6 4.1 4.3 1.5 0.5 3.1 0.6 4.7 0.4 1.1-0.1 2.2-0.4 3.1-1C39.5 32 40.2 30.5 40.2 28.7zM37.3 14.8c-2.7 0-5.5 0-8.2 0 0 0.8 0 1.6 0 2.4 2.7 0 5.4 0 8.2 0C37.3 16.4 37.3 15.6 37.3 14.8zM12.7 24.7c2 0 4 0 6 0 0.8 0 1.4 0.6 1.7 1.4 0.3 0.8 0.3 1.6 0.1 2.4 -0.2 0.8-0.8 1.4-1.7 1.5 -2 0.1-4 0-6.1 0C12.7 28.2 12.7 26.5 12.7 24.7zM12.7 21.6c0-1.5 0-2.9 0-4.4 0.5 0 0.9 0 1.4 0 1.4 0 2.7 0 4.1 0 0.9 0 1.5 0.4 1.6 1.4 0.1 0.7 0 1.4-0.1 2 -0.1 0.6-0.5 1-1.2 1C16.6 21.6 14.7 21.6 12.7 21.6zM36.5 24.7c-2.2 0-4.3 0-6.5 0 0-1.6 1.6-3.1 3.4-3.1C35.2 21.6 36.4 22.7 36.5 24.7z"/>
+								</svg>
+								<h4>Behance</h4>
+	  						</a>
+		    			</div>
+					</div>
+				</div> 
+			</section>
+
+	    	<div id="clearing" class="divider">
+		    	<div id="clearing-anchor" class="pl-anchor">
+		    		<div id="pl-1" class="plzi-top pl"></div>
+
+					<?= parallax_builder('clearing', 6, 15, 1, 5, 1); ?>
+				
 				</div>
 			</div>
-	    </section>
-
-		<div id="brook" class="dividers">
-			<div id="brook-anchor" class="divider">
-	    		<div id="pl-1" class="plzi-content pl">
-	    			<!-- <img src="img/brook/brook_forest-l-01.png"> -->
-	    		</div>
-
-	    		<?= parallax_builder('brook', 5, 15, 1, 10, 0); ?>
-
-    		</div>
-    	</div>
-	    
-
-	    <section id="contact">		        
-	        <div id="pl-first" class="plzi-content">
-	        	<!-- <img src="img/loch-ground.png"> -->
-	        </div>
-	    	
-	    	<div class="wrapper">
+		    
+		    <section id="projects">
 		    	<div class="container">
 
 					<?php if(isset($navbar)): ?><?=get_navbar($navbar)?><?php endif; ?>
 
 					<h1 class="heading on-dark">
-						<span>Get in Touch</span>
-						<span class="subtitle">Im currently looking for projects to be involved in. <br>If you are intrested, let me know.</span>
+						<span>Projects</span>
+						<span class="subtitle">My work so far</span>
 						<hr>
 					</h1>
 
-					<h4 class="heading on-dark">
-		    			<span>Robin Hansson</span>
-						<span class="subtitle">Växjö, Sweden</span>
-						<span class="mail"><a href="mailto:robin@arthcy.net">robin@arthcy.net</a></span>
-						<span class="subtitle">
-							<a href="https://se.linkedin.com/pub/robin-hansson/102/703/215">Linkedin</a>
-							|
-							<a href="https://github.com/Arthcy">Github</a>
-							|
-							<a href="https://www.behance.net/arthcy">Behance</a>
-						</span>
-		   				<hr>
-					</h4>
-    			</div>
-    		</div>
-	    </section>
+		    		<div class="projects row">
+						<!-- <div class=""> -->
+							<figure class="project-item clearfix">
+								<svg class="browser-top" height="40" width="70">
+									<circle cx="20" cy="18" r="7" fill="#7aa4a2" />
+									<circle cx="40" cy="18" r="7" fill="#7aa4a2" />
+									<circle cx="60" cy="18" r="7" fill="#7aa4a2" />
+								</svg>
+			    				<div class="content">
+			    					<img src="img/proj_lujuriavegana.png">
+			    				</div>
+			    				<figcaption class="row">
+					    			<h4 class="heading on-light">
+						    			<span>Lujuria Vegana</span>
+					    				<span class="subtitle">Site Fresh Up</span>
+						   				<hr>
+					   				</h4>
+				    				<div class="description offset-by-one ten columns">
+				  						<p>Lujuria Vegana wanted to update their current site with the possibility to
+				  						upload new products and services. The site is build on Wordpress with custom plugins.</p>
+									</div>
+									<ul class="tags four columns">
+										<li><span>Wordpress</span></li>
+										<li><span>PHP</span></li>
+										<li><span>Front-End Development</span></li>
+										<li><span>Responsive</span></li>
+									</ul>
+									<!-- <div class="socials on-light sixteen columns">
+				  						<a href="#">
+				  							<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="48px" width="48px" x="0" y="0" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+												<path fill="#7aa4a2" d="M48 25.3c-0.3 5.4-2 10.6-5.4 14.8 -1.6 1.9-3.4 3.7-5.4 5 -1.4 0.9-4.8 3.4-6.5 2.7 -0.4-0.2-0.7-0.6-0.7-1.1 0-4.1 0.9-7.9-1.6-11.4 3.1-0.4 6.4-1.3 8.5-3.9 2.5-3.1 3.2-8.4 1.7-12.1 -0.6-1.5-1.8-2.3-1.6-4 0.3-1.9 0.4-3.3-0.3-5.3 0-0.1-0.1-0.1-0.2-0.1 -2.6-0.4-3.9 1.7-6.1 2.3 -0.9 0.3-2-0.2-3-0.3 -1.3-0.2-2.7-0.3-4-0.2 -1.9 0.1-4.7 1.3-6.3 0.3 -0.6-0.3-5.2-3.2-5.7-1.9 -0.5 1.3-0.7 2.7-0.7 4.1 0 0.8 0.2 1.5 0.4 2.3 0.1 0.4-0.8 1.3-1 1.6 -0.5 0.8-0.9 1.7-1.1 2.6 -0.6 2.3-0.5 4.8 0.2 7 1.4 5 5.6 7.1 10.4 7.7 -0.2 0.4-1.3 3.2-1.6 3.3 -0.9 0.4-1.8 0.6-2.8 0.6 -1.4 0-2.5-0.6-3.4-1.6 -1.3-1.5-2.3-3.7-4.6-3.6 -0.2 0-0.4 0.1-0.6 0.1 -0.3 0.1-0.3 0.3-0.2 0.6 0.5 0.8 1.5 1.2 2.1 1.9 0.7 0.8 1 1.7 1.5 2.6 1 1.8 2.4 2.8 4.5 3 1.2 0.1 2.4 0 3.5-0.3 0.1 1.2 0.6 4.6-0.3 5.5 -0.3 0.2-0.6 0.3-0.9 0.3 -1.9 0-4-1.5-5.5-2.5 -1.9-1.2-3.7-2.8-5.2-4.5 -2.8-3.3-4.8-7.3-5.6-11.6 -1.7-8.9 1.6-18.2 8.4-23.9C21.4-5.2 41 0.6 46.5 16.1 47.6 19 48 22.2 48 25.3 48 25 48 25 48 25.3 47.7 30.1 48 24.8 48 25.3z"/>
+											</svg>
+											<h4>Github</h4>
+										</a>
+				  						<a href="#">
+											<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0" y="0" height="48px" width="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+												<path fill="#7aa4a2" d="M0 24C0 10.7 10.8 0 24 0c13.2 0 24 10.8 24 24 0 13.3-10.8 24-24 24C10.7 48 0 37.2 0 24zM21.4 22.7c0.3-0.1 0.4-0.2 0.6-0.3 0.8-0.3 1.4-0.9 1.7-1.6 1.1-2.3 0-5.5-2.3-6.6 -1-0.5-2-0.6-3.1-0.6 -3.2 0-6.5 0-9.7 0 -0.2 0-0.3 0-0.5 0 0 6.7 0 13.3 0 20 0.2 0 0.3 0 0.4 0 3.3 0 6.7 0 10 0 0.5 0 1 0 1.4-0.1 2.3-0.5 4.1-1.7 4.6-4.1 0.3-1.4 0.3-2.7-0.2-4C24.1 23.8 23.1 22.9 21.4 22.7zM40.2 28.7c-1.2 0-2.3 0-3.5 0 -0.1 1.1-0.9 1.8-1.9 2 -0.6 0.1-1.1 0.2-1.7 0.1 -2-0.1-3.3-1.6-3.1-3.5 0.2 0 0.4 0 0.6 0 3.1 0 6.1 0 9.2 0 0.4 0 0.6 0 0.6-0.5 0-0.9 0.1-1.8-0.1-2.7 -0.5-2.6-2-4.5-4.7-5.2 -0.9-0.2-1.9-0.3-2.8-0.2 -2.6 0.1-4.6 1.1-5.9 3.4 -1.2 2.2-1.5 4.6-0.8 7.1 0.6 2.1 2 3.6 4.1 4.3 1.5 0.5 3.1 0.6 4.7 0.4 1.1-0.1 2.2-0.4 3.1-1C39.5 32 40.2 30.5 40.2 28.7zM37.3 14.8c-2.7 0-5.5 0-8.2 0 0 0.8 0 1.6 0 2.4 2.7 0 5.4 0 8.2 0C37.3 16.4 37.3 15.6 37.3 14.8zM12.7 24.7c2 0 4 0 6 0 0.8 0 1.4 0.6 1.7 1.4 0.3 0.8 0.3 1.6 0.1 2.4 -0.2 0.8-0.8 1.4-1.7 1.5 -2 0.1-4 0-6.1 0C12.7 28.2 12.7 26.5 12.7 24.7zM12.7 21.6c0-1.5 0-2.9 0-4.4 0.5 0 0.9 0 1.4 0 1.4 0 2.7 0 4.1 0 0.9 0 1.5 0.4 1.6 1.4 0.1 0.7 0 1.4-0.1 2 -0.1 0.6-0.5 1-1.2 1C16.6 21.6 14.7 21.6 12.7 21.6zM36.5 24.7c-2.2 0-4.3 0-6.5 0 0-1.6 1.6-3.1 3.4-3.1C35.2 21.6 36.4 22.7 36.5 24.7z"/>
+											</svg>
+											<h4>Behance</h4>
+				  						</a>
+									</div> -->
+								</figcaption>
+							</figure>
+						<!-- </div> -->
+					</div>
+				</div>
+		    </section>
 
-	    <footer>
-   			<div class="socials on-dark">
-				<a href="#" title="Get the site source at Github">
-						<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="48px" width="48px" x="0" y="0" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
-						<path fill="#7aa4a2" d="M48 25.3c-0.3 5.4-2 10.6-5.4 14.8 -1.6 1.9-3.4 3.7-5.4 5 -1.4 0.9-4.8 3.4-6.5 2.7 -0.4-0.2-0.7-0.6-0.7-1.1 0-4.1 0.9-7.9-1.6-11.4 3.1-0.4 6.4-1.3 8.5-3.9 2.5-3.1 3.2-8.4 1.7-12.1 -0.6-1.5-1.8-2.3-1.6-4 0.3-1.9 0.4-3.3-0.3-5.3 0-0.1-0.1-0.1-0.2-0.1 -2.6-0.4-3.9 1.7-6.1 2.3 -0.9 0.3-2-0.2-3-0.3 -1.3-0.2-2.7-0.3-4-0.2 -1.9 0.1-4.7 1.3-6.3 0.3 -0.6-0.3-5.2-3.2-5.7-1.9 -0.5 1.3-0.7 2.7-0.7 4.1 0 0.8 0.2 1.5 0.4 2.3 0.1 0.4-0.8 1.3-1 1.6 -0.5 0.8-0.9 1.7-1.1 2.6 -0.6 2.3-0.5 4.8 0.2 7 1.4 5 5.6 7.1 10.4 7.7 -0.2 0.4-1.3 3.2-1.6 3.3 -0.9 0.4-1.8 0.6-2.8 0.6 -1.4 0-2.5-0.6-3.4-1.6 -1.3-1.5-2.3-3.7-4.6-3.6 -0.2 0-0.4 0.1-0.6 0.1 -0.3 0.1-0.3 0.3-0.2 0.6 0.5 0.8 1.5 1.2 2.1 1.9 0.7 0.8 1 1.7 1.5 2.6 1 1.8 2.4 2.8 4.5 3 1.2 0.1 2.4 0 3.5-0.3 0.1 1.2 0.6 4.6-0.3 5.5 -0.3 0.2-0.6 0.3-0.9 0.3 -1.9 0-4-1.5-5.5-2.5 -1.9-1.2-3.7-2.8-5.2-4.5 -2.8-3.3-4.8-7.3-5.6-11.6 -1.7-8.9 1.6-18.2 8.4-23.9C21.4-5.2 41 0.6 46.5 16.1 47.6 19 48 22.2 48 25.3 48 25 48 25 48 25.3 47.7 30.1 48 24.8 48 25.3z"/>
-					</svg>
-					<h4>Github</h4>
-				</a>
+			<div id="brook" class="divider">
+				<div id="brook-anchor" class="pl-anchor">
+		    		<div id="pl-1" class="plzi-content pl">
+		    			<!-- <img src="img/brook/brook_forest-l-01.png"> -->
+		    		</div>
 
-				<a href="https://www.behance.net/gallery/28394233/Deep-Forest-of-Small-Land" title="Site demonstration at Behance">
-					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0" y="0" height="48px" width="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
-						<path fill="#7aa4a2" d="M0 24C0 10.7 10.8 0 24 0c13.2 0 24 10.8 24 24 0 13.3-10.8 24-24 24C10.7 48 0 37.2 0 24zM21.4 22.7c0.3-0.1 0.4-0.2 0.6-0.3 0.8-0.3 1.4-0.9 1.7-1.6 1.1-2.3 0-5.5-2.3-6.6 -1-0.5-2-0.6-3.1-0.6 -3.2 0-6.5 0-9.7 0 -0.2 0-0.3 0-0.5 0 0 6.7 0 13.3 0 20 0.2 0 0.3 0 0.4 0 3.3 0 6.7 0 10 0 0.5 0 1 0 1.4-0.1 2.3-0.5 4.1-1.7 4.6-4.1 0.3-1.4 0.3-2.7-0.2-4C24.1 23.8 23.1 22.9 21.4 22.7zM40.2 28.7c-1.2 0-2.3 0-3.5 0 -0.1 1.1-0.9 1.8-1.9 2 -0.6 0.1-1.1 0.2-1.7 0.1 -2-0.1-3.3-1.6-3.1-3.5 0.2 0 0.4 0 0.6 0 3.1 0 6.1 0 9.2 0 0.4 0 0.6 0 0.6-0.5 0-0.9 0.1-1.8-0.1-2.7 -0.5-2.6-2-4.5-4.7-5.2 -0.9-0.2-1.9-0.3-2.8-0.2 -2.6 0.1-4.6 1.1-5.9 3.4 -1.2 2.2-1.5 4.6-0.8 7.1 0.6 2.1 2 3.6 4.1 4.3 1.5 0.5 3.1 0.6 4.7 0.4 1.1-0.1 2.2-0.4 3.1-1C39.5 32 40.2 30.5 40.2 28.7zM37.3 14.8c-2.7 0-5.5 0-8.2 0 0 0.8 0 1.6 0 2.4 2.7 0 5.4 0 8.2 0C37.3 16.4 37.3 15.6 37.3 14.8zM12.7 24.7c2 0 4 0 6 0 0.8 0 1.4 0.6 1.7 1.4 0.3 0.8 0.3 1.6 0.1 2.4 -0.2 0.8-0.8 1.4-1.7 1.5 -2 0.1-4 0-6.1 0C12.7 28.2 12.7 26.5 12.7 24.7zM12.7 21.6c0-1.5 0-2.9 0-4.4 0.5 0 0.9 0 1.4 0 1.4 0 2.7 0 4.1 0 0.9 0 1.5 0.4 1.6 1.4 0.1 0.7 0 1.4-0.1 2 -0.1 0.6-0.5 1-1.2 1C16.6 21.6 14.7 21.6 12.7 21.6zM36.5 24.7c-2.2 0-4.3 0-6.5 0 0-1.6 1.6-3.1 3.4-3.1C35.2 21.6 36.4 22.7 36.5 24.7z"/>
-					</svg>
-					<h4>Behance</h4>
-				</a>
-			</div>	    	
-	    </footer>
+		    		<?= parallax_builder('brook', 5, 15, 1, 10, 0); ?>
+
+	    		</div>
+	    	</div>
+		    
+
+		    <section id="contact">		        
+		        <div id="pl-1" class="plzi-content"></div>
+		    	<div class="wrapper">
+			    	<div class="container">
+
+						<?php if(isset($navbar)): ?><?=get_navbar($navbar)?><?php endif; ?>
+
+						<h1 class="heading on-dark">
+							<span>Get in Touch</span>
+							<span class="subtitle">Im currently looking for projects to be involved in. <br>If you are intrested, let me know.</span>
+							<hr>
+						</h1>
+
+						<h4 class="heading on-dark">
+			    			<span>Robin Hansson</span>
+							<span class="subtitle">Växjö, Sweden</span>
+							<span class="mail"><a href="mailto:robin@arthcy.net">robin@arthcy.net</a></span>
+							<span class="subtitle">
+								<a href="https://www.linkedin.com/in/arthcy">Linkedin</a>
+								|
+								<a href="https://github.com/Arthcy">Github</a>
+								|
+								<a href="https://www.behance.net/arthcy">Behance</a>
+							</span>
+			   				<hr>
+						</h4>
+	    			</div>
+	    		</div>
+		    </section>
+
+		    <footer>
+	   			<div class="socials on-dark">
+					<a href="https://github.com/Arthcy/dfosl" title="Get the site source at Github">
+							<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="48px" width="48px" x="0" y="0" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+							<path fill="#7aa4a2" d="M48 25.3c-0.3 5.4-2 10.6-5.4 14.8 -1.6 1.9-3.4 3.7-5.4 5 -1.4 0.9-4.8 3.4-6.5 2.7 -0.4-0.2-0.7-0.6-0.7-1.1 0-4.1 0.9-7.9-1.6-11.4 3.1-0.4 6.4-1.3 8.5-3.9 2.5-3.1 3.2-8.4 1.7-12.1 -0.6-1.5-1.8-2.3-1.6-4 0.3-1.9 0.4-3.3-0.3-5.3 0-0.1-0.1-0.1-0.2-0.1 -2.6-0.4-3.9 1.7-6.1 2.3 -0.9 0.3-2-0.2-3-0.3 -1.3-0.2-2.7-0.3-4-0.2 -1.9 0.1-4.7 1.3-6.3 0.3 -0.6-0.3-5.2-3.2-5.7-1.9 -0.5 1.3-0.7 2.7-0.7 4.1 0 0.8 0.2 1.5 0.4 2.3 0.1 0.4-0.8 1.3-1 1.6 -0.5 0.8-0.9 1.7-1.1 2.6 -0.6 2.3-0.5 4.8 0.2 7 1.4 5 5.6 7.1 10.4 7.7 -0.2 0.4-1.3 3.2-1.6 3.3 -0.9 0.4-1.8 0.6-2.8 0.6 -1.4 0-2.5-0.6-3.4-1.6 -1.3-1.5-2.3-3.7-4.6-3.6 -0.2 0-0.4 0.1-0.6 0.1 -0.3 0.1-0.3 0.3-0.2 0.6 0.5 0.8 1.5 1.2 2.1 1.9 0.7 0.8 1 1.7 1.5 2.6 1 1.8 2.4 2.8 4.5 3 1.2 0.1 2.4 0 3.5-0.3 0.1 1.2 0.6 4.6-0.3 5.5 -0.3 0.2-0.6 0.3-0.9 0.3 -1.9 0-4-1.5-5.5-2.5 -1.9-1.2-3.7-2.8-5.2-4.5 -2.8-3.3-4.8-7.3-5.6-11.6 -1.7-8.9 1.6-18.2 8.4-23.9C21.4-5.2 41 0.6 46.5 16.1 47.6 19 48 22.2 48 25.3 48 25 48 25 48 25.3 47.7 30.1 48 24.8 48 25.3z"/>
+						</svg>
+						<h4>Github</h4>
+					</a>
+
+					<a href="https://www.behance.net/gallery/28394233/Deep-Forest-of-Small-Land" title="Site demonstration at Behance">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0" y="0" height="48px" width="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+							<path fill="#7aa4a2" d="M0 24C0 10.7 10.8 0 24 0c13.2 0 24 10.8 24 24 0 13.3-10.8 24-24 24C10.7 48 0 37.2 0 24zM21.4 22.7c0.3-0.1 0.4-0.2 0.6-0.3 0.8-0.3 1.4-0.9 1.7-1.6 1.1-2.3 0-5.5-2.3-6.6 -1-0.5-2-0.6-3.1-0.6 -3.2 0-6.5 0-9.7 0 -0.2 0-0.3 0-0.5 0 0 6.7 0 13.3 0 20 0.2 0 0.3 0 0.4 0 3.3 0 6.7 0 10 0 0.5 0 1 0 1.4-0.1 2.3-0.5 4.1-1.7 4.6-4.1 0.3-1.4 0.3-2.7-0.2-4C24.1 23.8 23.1 22.9 21.4 22.7zM40.2 28.7c-1.2 0-2.3 0-3.5 0 -0.1 1.1-0.9 1.8-1.9 2 -0.6 0.1-1.1 0.2-1.7 0.1 -2-0.1-3.3-1.6-3.1-3.5 0.2 0 0.4 0 0.6 0 3.1 0 6.1 0 9.2 0 0.4 0 0.6 0 0.6-0.5 0-0.9 0.1-1.8-0.1-2.7 -0.5-2.6-2-4.5-4.7-5.2 -0.9-0.2-1.9-0.3-2.8-0.2 -2.6 0.1-4.6 1.1-5.9 3.4 -1.2 2.2-1.5 4.6-0.8 7.1 0.6 2.1 2 3.6 4.1 4.3 1.5 0.5 3.1 0.6 4.7 0.4 1.1-0.1 2.2-0.4 3.1-1C39.5 32 40.2 30.5 40.2 28.7zM37.3 14.8c-2.7 0-5.5 0-8.2 0 0 0.8 0 1.6 0 2.4 2.7 0 5.4 0 8.2 0C37.3 16.4 37.3 15.6 37.3 14.8zM12.7 24.7c2 0 4 0 6 0 0.8 0 1.4 0.6 1.7 1.4 0.3 0.8 0.3 1.6 0.1 2.4 -0.2 0.8-0.8 1.4-1.7 1.5 -2 0.1-4 0-6.1 0C12.7 28.2 12.7 26.5 12.7 24.7zM12.7 21.6c0-1.5 0-2.9 0-4.4 0.5 0 0.9 0 1.4 0 1.4 0 2.7 0 4.1 0 0.9 0 1.5 0.4 1.6 1.4 0.1 0.7 0 1.4-0.1 2 -0.1 0.6-0.5 1-1.2 1C16.6 21.6 14.7 21.6 12.7 21.6zM36.5 24.7c-2.2 0-4.3 0-6.5 0 0-1.6 1.6-3.1 3.4-3.1C35.2 21.6 36.4 22.7 36.5 24.7z"/>
+						</svg>
+						<h4>Behance</h4>
+					</a>
+				</div>	    	
+		    </footer>
+		</div> <!-- END #main -->   
 	</div>
 </body>
 </html>

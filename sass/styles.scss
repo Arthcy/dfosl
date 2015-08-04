@@ -1,18 +1,19 @@
-/*
-* Vendor
-*/
+/*******************
+Vendor
+********************/
 @import "modules/variables";
 @import 'modules/reset';
 @import "vendor/skeleton";
 @import "modules/base";
 
-/*
-* Partials
-*/
+/*******************
+Partials
+********************/
 @import "partials/home";
 @import "partials/dividers";
+@import "partials/navigation";
 
-/*
-* Page
-*/
+/*******************
+Page
+********************/
 @import "modules/responsive";

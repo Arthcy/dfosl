@@ -1,14 +1,14 @@
-/*
-* Vendor
-*/
-/**
-* Colors
-*/
+/*******************
+Vendor
+********************/
+/********************
+Colors
+********************/
 /* Overcast */
 /* Sunset */
-/**
-* Font
-*/
+/********************
+Fonts
+********************/
 /** --------------------------------------------------------------
  * Reset. http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126
  *
@@ -430,17 +430,21 @@ or wrap each row of columns in a <div class="row"> */
   width: 0;
   height: 0; }
 
-/*
-* Import
-*/
+/*******************
+Import
+********************/
 /********************
-Google fonts
+Importing Fonts
+********************/
+/********************
+Font
 ********************/
 html {
   font-size: 100%/1; }
 
 body {
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Open Sans", sans-serif;
+  color: #1c2528; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Oswald", sans-serif; }
@@ -489,25 +493,22 @@ p a {
 p a:hover {
   color: #e2534e; }
 
-h1.heading {
-  text-align: center;
-  margin-bottom: 1em;
-  padding-top: 2.2em; }
+/********************
+Headings
+********************/
+/* Base */
+.heading {
+  text-align: center; }
 
-h1.heading span:first-child {
+.heading span:first-child {
+  text-transform: uppercase;
   display: block;
-  margin-bottom: 0.2em;
-  text-transform: uppercase; }
+  margin-bottom: 0.2em; }
 
-h4.heading {
-  text-align: center;
-  margin-bottom: 2em;
-  padding-top: 1.8em; }
-
-h4.heading span:first-child {
+.heading .subtitle {
   display: block;
-  margin-bottom: 0.2em;
-  text-transform: uppercase; }
+  font-family: "Ovo", serif;
+  line-height: 1.2; }
 
 .overcast .on-light span:first-child {
   color: #1c2528; }
@@ -521,113 +522,68 @@ h4.heading span:first-child {
 .sunset .on-dark span:first-child {
   color: #e0eee2; }
 
-h1.heading .subtitle {
-  display: block;
-  font-size: 0.5em;
-  line-height: 1.2;
-  font-family: "Ovo", serif;
-  color: #4a747b; }
-
-.overcast h1.heading .subtitle {
-  color: #79a4a3; }
-
-.sunset h1.heading .subtitle {
-  color: #f7bc86; }
-
-h4.heading .subtitle {
-  display: block;
-  font-size: 0.8em;
-  line-height: 1.2;
-  font-family: "Ovo", serif; }
-
-h4.heading .mail {
-  padding-bottom: 0.4em;
-  display: block; }
-
-h4.heading a {
+.heading a {
   text-decoration: none;
   color: #e0eee2;
   font-size: 0.8em; }
 
-h4.heading a:hover {
+.heading a:hover {
   color: #e2534e; }
 
-.overcast h4.heading .subtitle {
+.overcast .heading .subtitle {
   color: #79a4a3; }
 
-.sunset h4.heading .subtitle {
+.sunset .heading .subtitle {
   color: #f7bc86; }
 
-.info h4 {
-  color: #e0eee2;
-  text-transform: uppercase;
-  text-align: center; }
+/* Big */
+h1.heading {
+  margin-bottom: 1em;
+  padding-top: 2.2em; }
 
-/*
-* Global
-*/
-img {
-  width: 100%; }
+h1.heading .subtitle {
+  font-size: 0.5em; }
 
-.left {
-  float: left; }
+/* Smaller */
+h4.heading {
+  margin-bottom: 2em;
+  padding-top: 1.8em; }
 
-.right {
-  float: right; }
+h4.heading .subtitle {
+  font-size: 0.8em; }
 
-/*
-* Partials
-*/
+/* Bottom Breaker */
+hr {
+  width: 22px;
+  padding-bottom: 3px;
+  margin-top: 10px;
+  border: none; }
+
+.on-light hr {
+  background-color: #151d20; }
+
+.on-dark hr {
+  background-color: #e0eee2; }
+
 /*******************
 Global
 ********************/
-body {
-  color: #1c2528; }
-
-body.overcast {
-  background-color: #1f464c; }
-
-body.sunset {
-  background-color: #540031; }
+img {
+  width: 100%; }
 
 a svg path {
   fill: inherit; }
 
-/********************
-Structure
-********************/
+#main {
+  visibility: hidden; }
+
 header,
 footer,
 section,
-.divider,
-.dividers {
+.divider {
   position: relative;
   width: 100%;
-  float: left;
-  visibility: hidden; }
-
-footer {
-  padding-top: 40px; }
-
-.overcast footer {
-  background-color: #1c2528; }
-
-.sunset footer {
-  background-color: #2e112d; }
-
-#contact {
-  z-index: 14; }
-
-.resume p,
-.description p {
-  margin: 0 1em 2em; }
-
-.top-margin {
-  width: 100%;
-  height: 800px; }
-
-#skrollr-body {
-  overflow: hidden; }
+  float: left; }
 
 .pl svg {
   height: auto;
@@ -637,17 +593,35 @@ footer {
   top: 0;
   left: 0; }
 
-.svg-container {
-  display: inline-block;
-  position: relative;
-  width: 100%;
-  vertical-align: middle; }
-
 .svg-content {
   display: inline-block;
   position: relative;
   top: 0;
   left: 0; }
+
+/*******************
+Partials
+********************/
+/*******************
+Global
+********************/
+body.overcast {
+  background-color: #1f464c; }
+
+body.sunset {
+  background-color: #540031; }
+
+/********************
+Structure
+********************/
+footer {
+  padding: 90px 0 70px; }
+
+.overcast footer {
+  background-color: #1c2528; }
+
+.sunset footer {
+  background-color: #2e112d; }
 
 /********************
 Splash Screen
@@ -695,8 +669,18 @@ About
 .sunset #about .resume {
   background-color: #f9f9f5; }
 
+.resume p,
+.description p {
+  margin: 0 1em 2em; }
+
 #about .socials {
   margin-top: 30px; }
+
+.sunset #about {
+  background-color: #1a0a19; }
+
+.overcast #about {
+  background-color: #151d20; }
 
 /********************
 Projects
@@ -718,9 +702,18 @@ Projects
 .sunset .browser-top circle {
   fill: #f7bc86; }
 
+.sunset #projects {
+  background-color: #1a0a19; }
+
+.overcast #projects {
+  background-color: #151d20; }
+
 /********************
 Contact
 ********************/
+#contact {
+  z-index: 14; }
+
 #contact .plzi-content {
   font-size: 0; }
 
@@ -735,162 +728,19 @@ Contact
 .overcast #contact {
   background-color: #79a4a3; }
 
-.info {
-  margin-top: 30px; }
-
-/********************
-Navigation
-********************/
-#menu-button {
-  display: none;
-  margin: 12px;
-  cursor: pointer;
-  z-index: 20;
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 2em;
-  height: 2em;
-  padding: 0.2em 0.6em;
-  background-color: #1c2528;
-  -webkit-border-radius: 0.6em;
-  -moz-border-radius: 0.6em;
-  -ms-border-radius: 0.6em;
-  border-radius: 0.6em; }
-
-#menu-button svg {
-  padding: 0.25em 0 0 0.2em; }
-
-#menu-button:hover svg path {
-  fill: white; }
-
-#theme-button {
-  margin: 12px;
-  cursor: pointer;
-  z-index: 20;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 2em;
-  height: 2em;
-  padding: 0.2em 0.6em;
-  background-color: #1c2528;
-  -webkit-border-radius: 0.6em;
-  -moz-border-radius: 0.6em;
-  -ms-border-radius: 0.6em;
-  border-radius: 0.6em; }
-
-#theme-button svg {
-  padding: 0.2em; }
-
-.overcast #theme-button:hover path {
-  fill: #f7bc86; }
-
-.sunset #theme-button:hover path {
-  fill: #79a4a3; }
-
-#theme-button svg {
-  display: none; }
-
-.overcast #sunset-button {
-  display: block; }
-
-.sunset #overcast-button {
-  display: block; }
-
-#site-navigation {
-  width: 100%;
-  height: 100%; }
-
-#site-navigation .navbar {
-  margin: 0;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 12;
-  transition: height 0.50s;
-  overflow: hidden; }
-
-.overcast #site-navigation .navbar {
-  background-color: #151d20; }
-
-.sunset #site-navigation .navbar {
+.sunset #contact .wrapper {
   background-color: #1a0a19; }
 
-#site-navigation .navbar.collapsed {
-  height: 0; }
+.overcast #contact .wrapper {
+  background-color: #151d20; }
 
-#site-navigation .navbar ul {
-  padding: 0;
-  width: 100%;
-  height: 200px;
-  margin-top: -100px;
-  position: absolute;
-  top: 50%; }
-
-#site-navigation .navbar li {
-  padding: 0.5em 0;
-  margin-left: 0.2em;
-  float: none;
-  padding: 0;
-  margin: 0 0 60px 0;
-  text-align: center;
-  display: block; }
-
-#site-navigation .navbar li a {
-  display: inline;
-  font-size: 1em;
-  letter-spacing: 0.08em;
-  margin: 0; }
-
-.navbar {
-  margin-bottom: 10px; }
-
-.navbar-logo {
-  width: 4.2em;
-  padding: 2.2em 0 0.4em 10px; }
-
-.navbar ul {
-  padding: 0.4em 10px 0.4em 0;
-  text-align: center; }
-
-.navbar ul li {
-  text-decoration: none;
-  text-transform: uppercase;
-  display: inline-block;
-  padding-top: 1.4em;
-  margin-left: 1em;
-  list-style: none;
-  color: #e0eee2; }
-
-.overcast .navbar ul li {
-  border-color: #151d20; }
-
-.sunset .navbar ul li {
-  border-color: #1a0a19; }
-
-.navbar ul li a {
-  line-height: 1;
-  font-size: 1em;
-  text-decoration: none;
-  font-weight: 200;
-  border-bottom: 0.2em solid;
-  border-color: inherit;
-  padding: 0.75em 0.8em;
-  color: inherit;
-  display: block;
-  letter-spacing: 0.08em;
-  font-family: "Oswald", sans-serif; }
-
-.navbar ul li a:hover,
-.navbar ul li a.active {
-  border-color: #e2534e; }
+.sunset #contact #pl-1 svg path {
+  fill: #1a0a19; }
 
 /********************
 Customs
 ********************/
+/* Social Buttons */
 .socials {
   text-align: center; }
 
@@ -954,48 +804,61 @@ Customs
 .sunset .tags li {
   background-color: #f7bc86; }
 
-hr {
-  width: 22px;
-  padding-bottom: 3px;
-  margin-top: 10px;
-  border: none; }
+/* Top Buttons */
+#menu-button {
+  display: none;
+  margin: 12px;
+  cursor: pointer;
+  z-index: 20;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 2em;
+  height: 2em;
+  padding: 0.2em 0.6em;
+  background-color: #1c2528;
+  -webkit-border-radius: 0.6em;
+  -moz-border-radius: 0.6em;
+  -ms-border-radius: 0.6em;
+  border-radius: 0.6em; }
 
-.on-light hr {
-  background-color: #151d20; }
+#menu-button svg {
+  padding: 0.25em 0 0 0.2em; }
 
-.on-dark hr {
-  background-color: #e0eee2; }
+#menu-button:hover svg path {
+  fill: white; }
 
-/********************
-Base
-********************/
-.pl {
-  position: absolute;
-  bottom: 0;
-  font-size: 0;
-  width: 100%; }
+#theme-button {
+  margin: 12px;
+  cursor: pointer;
+  z-index: 20;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 2em;
+  height: 2em;
+  padding: 0.2em 0.6em;
+  background-color: #1c2528;
+  -webkit-border-radius: 0.6em;
+  -moz-border-radius: 0.6em;
+  -ms-border-radius: 0.6em;
+  border-radius: 0.6em; }
 
-/* Parallax Layer */
-#outlook,
-#clearing,
-#brook,
-#loch {
-  position: relative;
-  width: 100%; }
+#theme-button svg {
+  padding: 0.2em; }
 
-.overcast #clearing,
-.overcast #brook {
-  background-color: #e0eee2; }
+.overcast #theme-button:hover path {
+  fill: #f7bc86; }
 
-.sunset #clearing,
-.sunset #brook {
-  background-color: #f9f9f5; }
-
-.overcast #brook polygon, .overcast #brook rect {
+.sunset #theme-button:hover path {
   fill: #79a4a3; }
 
-.sunset #brook polygon, .sunset #brook rect {
-  fill: #f7bc86; }
+#theme-button svg {
+  display: none; }
+
+.overcast #sunset-button,
+.sunset #overcast-button {
+  display: block; }
 
 /********************
 Parallax Layer z-index
@@ -1006,6 +869,91 @@ Parallax Layer z-index
 .plzi-bg-second {
   z-index: 2; }
 
+.plzi-bg-third {
+  z-index: 3; }
+
+.plzi-1 {
+  z-index: 9; }
+
+.plzi-2 {
+  z-index: 8; }
+
+.plzi-3 {
+  z-index: 7; }
+
+.plzi-4 {
+  z-index: 6; }
+
+.plzi-5 {
+  z-index: 5; }
+
+.plzi-6 {
+  z-index: 4; }
+
+.plzi-7 {
+  z-index: 3; }
+
+.plzi-content {
+  z-index: 10; }
+
+.plzi-top {
+  z-index: 11; }
+
+/********************
+Base
+********************/
+.divider {
+  position: relative;
+  width: 100%; }
+
+.pl-anchor {
+  width: 100%;
+  position: relative; }
+
+.pl {
+  position: absolute;
+  bottom: 0;
+  font-size: 0;
+  width: 100%; }
+
+/* Parallax Layer */
+.overcast #clearing,
+.overcast #brook {
+  background-color: #e0eee2; }
+
+.sunset #clearing,
+.sunset #brook {
+  background-color: #f9f9f5; }
+
+/********************
+Outlook
+********************/
+/* Frame */
+#frame {
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
+
+.side-tree {
+  bottom: 0;
+  width: 14%; }
+
+#pl-right-tree {
+  right: 0; }
+
+#pl-left-tree {
+  left: 0; }
+
+#pl-ground {
+  bottom: 0; }
+
+.overcast #frame svg path {
+  fill: #151d20; }
+
+.sunset #frame svg path {
+  fill: #1a0a19; }
+
+/* Clouds */
 .sunset #pl-cloud-dark svg path {
   z-index: 3;
   fill: #850333; }
@@ -1022,75 +970,43 @@ Parallax Layer z-index
   z-index: 3;
   fill: #e0eee2; }
 
-.plzi-bg-third {
-  z-index: 3; }
-
-.plzi-first, .plzi-1 {
-  z-index: 9; }
-
-.plzi-second, .plzi-2 {
-  z-index: 8; }
-
-.plzi-third, .plzi-3 {
-  z-index: 7; }
-
-.plzi-fourth, .plzi-4 {
-  z-index: 6; }
-
-.plzi-fifth, .plzi-5 {
-  z-index: 5; }
-
-.plzi-sixth, .plzi-6 {
-  z-index: 4; }
-
-.plzi-sixth, .plzi-7 {
-  z-index: 3; }
-
-.plzi-content {
-  z-index: 10; }
-
-.plzi-top {
-  z-index: 11; }
-
-/********************
-Outlook
-********************/
-#outlook {
-  top: 100; }
-
-#frame {
-  position: absolute;
-  bottom: 0;
-  width: 100%; }
-
-#pl-right-tree {
-  right: 0;
-  bottom: 0;
-  width: 14%; }
-
-#pl-left-tree {
-  left: 0;
-  bottom: 0;
-  width: 14%; }
-
-#pl-ground {
-  bottom: 0; }
-
 /********************
 Clearing
 ********************/
-#clearing {
-  top: 0; }
-
 /********************
 Brook
 ********************/
-#brook {
-  top: 0; }
+.overcast #brook polygon,
+.overcast #brook rect {
+  fill: #79a4a3; }
+
+.sunset #brook polygon,
+.sunset #brook rect {
+  fill: #f7bc86; }
 
 /********************
 COLORS
 ********************/
+/* Overcast */
+.overcast #pl-1 svg path {
+  fill: #151d20; }
+
+.overcast #pl-2 svg path {
+  fill: #1c2528; }
+
+.overcast #pl-3 svg path {
+  fill: #1e2e36; }
+
+.overcast #pl-4 svg path {
+  fill: #1f464c; }
+
+.overcast #pl-5 svg path {
+  fill: #2c5a61; }
+
+.overcast #pl-6 svg path {
+  fill: #4a747b; }
+
+/* Sunset */
 .sunset #pl-1 svg path {
   fill: #1a0a19; }
 
@@ -1112,71 +1028,109 @@ COLORS
 .sunset #pl-7 svg path {
   fill: #f7bc86; }
 
-.sunset #pl-ground svg path {
-  fill: #1a0a19; }
+/********************
+Navigation
+********************/
+/* Dropdown Navigation */
+#site-navigation {
+  width: 100%;
+  height: 100%; }
 
-.sunset #pl-left-tree svg path {
-  fill: #1a0a19; }
+#site-navigation .navbar {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 12;
+  transition: height 0.50s;
+  overflow: hidden; }
 
-.sunset #pl-right-tree svg path {
-  fill: #1a0a19; }
-
-.sunset #about {
-  background-color: #1a0a19; }
-
-.sunset #projects {
-  background-color: #1a0a19; }
-
-.sunset #contact .wrapper {
-  background-color: #1a0a19; }
-
-.sunset #contact #pl-first svg path {
-  fill: #1a0a19; }
-
-.overcast #pl-1 svg path {
-  fill: #151d20; }
-
-.overcast #pl-2 svg path {
-  fill: #1c2528; }
-
-.overcast #pl-3 svg path {
-  fill: #1e2e36; }
-
-.overcast #pl-4 svg path {
-  fill: #1f464c; }
-
-.overcast #pl-5 svg path {
-  fill: #2c5a61; }
-
-.overcast #pl-6 svg path {
-  fill: #4a747b; }
-
-.overcast #pl-ground svg path {
-  fill: #151d20; }
-
-.overcast #pl-left-tree svg path {
-  fill: #151d20; }
-
-.overcast #pl-right-tree svg path {
-  fill: #151d20; }
-
-.overcast #about {
+.overcast #site-navigation .navbar {
   background-color: #151d20; }
 
-.overcast #projects {
-  background-color: #151d20; }
+.sunset #site-navigation .navbar {
+  background-color: #1a0a19; }
 
-.overcast #contact .wrapper {
-  background-color: #151d20; }
+#site-navigation .navbar.collapsed {
+  height: 0; }
 
-/*
-* Page
-*/
+#site-navigation .navbar ul {
+  padding: 0;
+  width: 100%;
+  height: 200px;
+  margin-top: -100px;
+  position: absolute;
+  top: 50%; }
+
+#site-navigation .navbar li {
+  padding: 0.5em 0;
+  margin-left: 0.2em;
+  float: none;
+  padding: 0;
+  margin: 0 0 60px 0;
+  text-align: center;
+  display: block; }
+
+#site-navigation .navbar li a {
+  display: inline;
+  font-size: 1em;
+  letter-spacing: 0.08em;
+  margin: 0; }
+
+/* Section Navigation */
+.navbar {
+  margin-bottom: 10px; }
+
+.navbar-logo {
+  width: 4.2em;
+  padding: 2.2em 0 0.4em 10px; }
+
+.navbar ul {
+  padding: 0.4em 10px 0.4em 0;
+  text-align: center; }
+
+.navbar ul li {
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  padding-top: 1.4em;
+  margin-left: 1em;
+  list-style: none;
+  color: #e0eee2; }
+
+.overcast .navbar ul li {
+  border-color: #151d20; }
+
+.sunset .navbar ul li {
+  border-color: #1a0a19; }
+
+.navbar ul li a {
+  line-height: 1;
+  font-size: 1em;
+  text-decoration: none;
+  font-weight: 200;
+  border-bottom: 0.2em solid;
+  border-color: inherit;
+  padding: 0.75em 0.8em;
+  color: inherit;
+  display: block;
+  letter-spacing: 0.08em;
+  font-family: "Oswald", sans-serif; }
+
+.navbar ul li a:hover,
+.navbar ul li a.active {
+  border-color: #e2534e; }
+
+/*******************
+Page
+********************/
 @media only screen and (max-width: 480px) {
-  #frame .frame-tree {
-    width: 15%; }
+  #frame .side-tree {
+    width: 20%; }
 
-  .divider {
+  .pl-anchor {
     width: 650px; }
 
   #menu-button {
@@ -1188,6 +1142,9 @@ COLORS
   .resume, .projects {
     margin-top: 30px; } }
 @media only screen and (max-width: 767px) {
+  p {
+    font-size: 1em; }
+
   .tags {
     text-align: center; }
 

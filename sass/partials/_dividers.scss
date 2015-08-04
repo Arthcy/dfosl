@@ -1,1 +1,85 @@
+/********************
+Parallax Layer z-index
+********************/
+.plzi-bg { z-index: 1; }
+.plzi-bg-second { z-index: 2; }
+.plzi-bg-third { z-index: 3; }
+.plzi-1 { z-index: 9; }
+.plzi-2 { z-index: 8; }
+.plzi-3 { z-index: 7; }
+.plzi-4 { z-index: 6; }
+.plzi-5 { z-index: 5; }
+.plzi-6 { z-index: 4; }
+.plzi-7 { z-index: 3; }
+.plzi-content { z-index: 10; }
+.plzi-top { z-index: 11; }
 
+
+/********************
+Base
+********************/
+.divider { position: relative; width: 100%; }
+.pl-anchor { width: 100%; position: relative; }
+.pl { position: absolute; bottom: 0; font-size: 0; width: 100%; } /* Parallax Layer */
+.overcast #clearing,
+.overcast #brook { background-color: $overcastlight; }
+.sunset #clearing,
+.sunset #brook { background-color: $sunsetlight; }
+
+
+/********************
+Outlook
+********************/
+/* Frame */
+#frame {
+	position: absolute;
+	bottom: 0;
+	width: 100%; 
+}
+.side-tree { bottom: 0; width: 14%; }
+#pl-right-tree { right: 0; }
+#pl-left-tree { left: 0; }
+#pl-ground { bottom: 0; }
+.overcast #frame svg path { fill: $blue_a; }
+.sunset #frame svg path { fill: $red_a; }
+
+/* Clouds */
+.sunset #pl-cloud-dark svg path { z-index: 3; fill: $red_d;}
+.sunset #pl-cloud-light svg path { z-index: 3; fill: $sunsetlight; }
+.overcast #pl-cloud-dark svg path { z-index: 3; fill: $blue_f;}
+.overcast #pl-cloud-light svg path { z-index: 3; fill: $overcastlight; }
+
+
+/********************
+Clearing
+********************/
+
+/********************
+Brook
+********************/
+//#brook { top: 0; }
+.overcast #brook polygon, 
+.overcast #brook rect { fill: $blue_g; }
+.sunset #brook polygon, 
+.sunset #brook rect { fill: $red_g; }
+
+
+/********************
+COLORS
+********************/
+/* Overcast */
+.overcast #pl-1 svg path { fill: $blue_a; }
+.overcast #pl-2 svg path { fill: $blue_b; }
+.overcast #pl-3 svg path { fill: $blue_c; }
+.overcast #pl-4 svg path { fill: $blue_d; }
+.overcast #pl-5 svg path { fill: $blue_e; }
+.overcast #pl-6 svg path { fill: $blue_f; }
+
+/* Sunset */
+.sunset #pl-1 svg path { fill: $red_a; }
+.sunset #pl-2 svg path { fill: $red_b; }
+.sunset #pl-3 svg path { fill: $red_c; }
+.sunset #pl-4 svg path { fill: $red_d; }
+.sunset #pl-5 svg path { fill: $red_e; }
+.sunset #pl-6 svg path { fill: $red_f; }
+.sunset #pl-7 svg path { fill: $red_g; }

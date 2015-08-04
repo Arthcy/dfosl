@@ -19,8 +19,6 @@ define(['jquery', 'waypoints', 'global'], function ($, waypoint, global) {
 			$sections = $('section');
 			$themebutton = $('#theme-button');
 			$s = global.getSkrollr();
-
-//console.log(global.getSkrollr);
 			
 			bindUI();
 		}

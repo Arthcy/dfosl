@@ -1,0 +1,73 @@
+/********************
+Navigation
+********************/
+/* Dropdown Navigation */
+#site-navigation {
+	width: 100%; height: 100%;
+}
+#site-navigation .navbar {
+	margin: 0;
+	width: 100%; height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 12;
+	transition: height 0.50s;
+	overflow: hidden;
+}
+.overcast #site-navigation .navbar { background-color: $blue_a; }
+.sunset #site-navigation .navbar { background-color: $red_a; }
+#site-navigation .navbar.collapsed { height: 0; }
+#site-navigation .navbar ul {
+	padding: 0;
+	width: 100%; height: 200px;
+	margin-top: -100px;
+	position: absolute;
+	top: 50%;
+}
+#site-navigation .navbar li { 
+	padding: 0.5em 0; 
+	margin-left: 0.2em;
+	float: none;
+	padding: 0;
+	margin: 0 0 60px 0;
+	text-align: center;
+	display: block;
+}
+#site-navigation .navbar li a {
+	display: inline;
+	font-size: 1em; 
+	letter-spacing: 0.08em;
+	margin: 0;
+}
+
+/* Section Navigation */
+.navbar { margin-bottom: 10px; }
+.navbar-logo { width: 4.2em; padding: 2.2em 0 0.4em 10px; }
+.navbar ul { padding: 0.4em 10px 0.4em 0; text-align: center; }
+.navbar ul li {
+	text-decoration: none;
+	text-transform: uppercase;
+	display: inline-block;
+	padding-top: 1.4em;
+	margin-left: 1em;
+	list-style: none;
+	color: $daylight;
+}
+.overcast .navbar ul li { border-color: $blue_a; }
+.sunset .navbar ul li { border-color: $red_a; }
+.navbar ul li a { 
+	line-height: 1; 
+	font-size: 1em;
+	text-decoration: none; 
+	font-weight: 200;
+	border-bottom: 0.2em solid;
+	border-color: inherit;
+	padding: 0.75em 0.8em;
+	color: inherit;
+	display: block;
+	letter-spacing: 0.08em;
+	font-family: $title-font-family;
+}
+.navbar ul li a:hover, 
+.navbar ul li a.active { border-color: $red; }

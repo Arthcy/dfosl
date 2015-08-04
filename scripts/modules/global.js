@@ -3,7 +3,7 @@ define(['skrollr'], function (skrollr) {
 
 	var global = (function() {
 		var $window,
-			$dividers,
+			$anchor,
 			$s;
 
 		var getSkrollr = function() {
@@ -12,7 +12,7 @@ define(['skrollr'], function (skrollr) {
 
 		var init = function() {
 			$window = $(window);
-			$dividers = $('.divider');
+			$anchor = $('.pl-anchor');
 	
 			bindUI();
 		}
@@ -106,42 +106,43 @@ define(['skrollr'], function (skrollr) {
 				  	append('#brook #pl-5', data);
 				}),
 				$.get(svgUrl + "loch-ground.svg", function(data) {
-				  	append('#contact #pl-first', data);
+				  	append('#contact #pl-1', data);
 				})
 			).then(function() {
 				var scrolled = false;		
 
+				// Cancel scroll animation if user scrolls
 				$(window).scroll(function () {
 				    scrolled = true;
 				});
 
 				setTimeout(function() { 
-					$('header, footer, section, .divider, .dividers').css({opacity: 0, visibility: "visible"}).animate({opacity: 1}, 200);
+					$('#main').css({opacity: 0, visibility: "visible"}).animate({opacity: 1}, 200);
 					$('.preloader').css('display', 'none');
 
-					if (scrolled === false) {
-						$s.animateTo(window.innerHeight);  
-					}
+					// if (scrolled === false) {
+					// 	$s.animateTo(window.innerHeight);  
+					// }
 				}, 1000);
 			});
 		}
 
 		var resizeDividers = function() {
 			// Set dividers height from current width
-			var objHeight = $dividers.width() * .35;
-			$.each($dividers, function(){
+			var objHeight = $anchor.width() * .35;
+			$.each($anchor, function(){
 			    $(this).height(objHeight + 'px');
 			});
 
-			// Center divider for small devices
+			// Center dividers for small devices
 			var offsetX;
 			if ($window.width() <= 480) {
-			    offsetX = ($dividers.width() - $window.width()) / 2;
-				$.each($dividers, function() {
+			    offsetX = ($anchor.width() - $window.width()) / 2;
+				$.each($anchor, function() {
 					$(this).css({ left: -offsetX });
 				});
 			} else {
-				$.each($dividers, function() {
+				$.each($anchor, function() {
 					$(this).css({ left: 0 });
 				});				
 			}

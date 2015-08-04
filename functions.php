@@ -4,7 +4,7 @@
 *
 */
 $navbar = array(
-    'class'   => 'navbar clearfix',
+    'class'   => 'navbar',
     'items'   => array(
         'about'     => array('text'=>'About',       'url'=>'#about',    'title' => 'About Me'),
         'projects'  => array('text'=>'Projects',    'url'=>'#projects', 'title' => 'My Projects'),
@@ -52,12 +52,10 @@ function parallax_builder($name, $levels, $offset, $startLevel = 0, $ref = 0, $b
 		$pl = $i + $startLevel;
 		$l = sprintf('%02d', $pl);
 
-		$html .= "<div id='pl-{$pl}' class='plzi-{$pl} pl svg-container'\n";
+		$html .= "<div id='pl-{$pl}' class='plzi-{$pl} pl'\n";
 		$html .= "data-bottom-top='bottom: {$top}%;'";
 		$html .= "data-top-bottom='bottom: {$bottom}%;'";
-		$html .= "data-anchor-target='#{$name}-anchor'>\n";
-		//$html .= "<img src='img/{$name}/{$name}_forest-l-{$l}.png'>\n";
-		$html .= "</div>";
+		$html .= "data-anchor-target='#{$name}-anchor'></div>";
 	}
 	return $html;
 }

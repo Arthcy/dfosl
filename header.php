@@ -7,13 +7,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Arthcy | Robin Hansson</title>
 <link rel='shortcut icon' href='favicon.ico'/>
+
+<!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
 <link rel='stylesheet' type='text/css' href='css/styles.css'/>
 <link rel="icon" href="favicon.ico">
-
 <script data-main="scripts/main" src="scripts/require.js"></script>
-
 <script>
-
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -21,7 +23,5 @@
 
 	ga('create', 'UA-65108224-1', 'auto');
 	ga('send', 'pageview');
-
 </script>
-
 </head>
